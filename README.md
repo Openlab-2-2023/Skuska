@@ -1,1 +1,1 @@
-# Skuska
+#elektrina je dobra vec
