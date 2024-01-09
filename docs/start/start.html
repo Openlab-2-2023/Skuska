@@ -18,7 +18,7 @@
             <nav>
                 <div class="navbar">
                     <img class="logo" src="../video_and_image/logo.png">
-                    <ul>
+                    <ul class="navbar-links">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="start.html">Start</a></li>
                         <li><a href="../galery/galery.html">Galery</a></li>
@@ -36,60 +36,81 @@
     </header>
     <section>
         <div>
-            <!-- #region <div class="container">
-                <div class="top">
-                    <section class="prierez">
-                        <h2>Prierez vodiča podľa prúdu</h2>
-                        <img class="obrazky" src="/galery/elektrikar.svg">
-                    </section>
-                </div>-->
+            <div class="section">
+                Prierez(priemer)vodiča
             </div>
-            <div class="container">
-                <div class="flex-container">              
-                    <div class="zaklady">
-                        <h2>Prierez(priemer) vodiča podľa prúdu</h2>
-                        Průřez vodiče je velmi důležitým parametrem při distribuci elektrického proudu.
-                        Čím vätší procházející proud, tím více se vodič zahřívá a tím větší jsou na něm ztráty.
-                        Abychom toto kompenzovali, můžeme použít lepší vodiče (vodivější), vodiče ochlazovat, zvýšit
-                        napětí a snížit potřebný proud, nebo zvětšit průřez vodiče (týká se stejnosměrného a
-                        nízkofrekvenčního střídavého proudu).
-                        Mezní hodnoty zatížení měděných (Cu) izolovaných (PVC) vodičů a kabelů v závislosti na jejich
-                        průřezu. Tyto hodnoty jsou udávány při nejvyšší provozní teplotě v instalovaném prostředí. Max.
-                        proud se liší dle uložení vodičů, počtu vodičů a provedení izolace vodičů. S větším počtem
-                        vodičů vzniká více tepla. PVC izolace kabelu hůře teplo odvádí.
-                        Vždy je vhodné počítat s rezervou možného zatížení a fázové vodiče správně jistit tak, aby jimi
-                        neprotékal větší proud.
-                    </div>
-                    <div class="obrazky">
-                        <img class="pozadie" src="/galery/1.png">
-                    </div>
-                </div>
+            <div class="container-">
+                Prenos energie je veľmi dôležitou a súčasne horúcou témou. Napriek tomu, že elektrinu odoberáme zo
+                zásuvky, nie je zásuvka vždy presne tam, kde ju práve potrebujeme. Našťastie existujú veľmi praktické
+                predlžovacie káble, ktoré rýchlo a jednoducho zaistia pomoc. S prierezom vodičov týchto káblov si robí
+                starosti málokto, pretože ten tu hrá skôr podradnú úlohu. Výrobcovia predlžovacích káblov ale presne
+                vedia, pri akej dĺžke kábla je potrebný aký prierez.
             </div>
+            <!-- Hlavní kontejner -->
             <div class="container">
-                <div class="flex-container">
-                    <div class="zaklady">
-                        <img class="pozadie" src="/galery/Poistky.svg">
-                    </div>
-                    <div>
-                        <h2>Zapojenie poistiek</h2>
-                        Každý elektrický okruh nejen v domácnosti musí být jištěn a to především proti zkratu nebo
-                        přetížení. K tomuto jištění slouží pojistky a jističe. Elektrická pojistka se při větším proudu
-                        (v ampérech – A) přetaví a tak přeruší obvod. Po odstranění poruchy je třeba pojistku vždy
-                        vyměnit za novou. Elektrický jistič je také navržen tak, aby při překročení proudového zatížení
-                        rozpojil obvod. Po odstranění poruchy lze však jističem opět obvod zapnout pouhým posunutím
-                        páčky.
 
-                        Přívod elektřiny do objektu je jištěn hlavními pojistkami (případně i hlavními přepěťovými
-                        bleskojistkami) za nimiž následuje hlavní jistič a elektroměr. Za elektroměrem se fázové vodiče
-                        dělí na jednotlivé okruhy a ty se jistí dalšími pojistkami, jističi a případně (proudovými)
-                        chrániči. Samostatný okruh by měly mít světla i zásuvky na každé podlaží, koupelna, sporák,
-                        bojler, dílna…, a případně i další silné spotřebiče.
-                        
+
+                <!-- Kontejner s obrázkem -->
+                <div class="image-container">
+                    <img src="../galery/prierez kabla.svg" alt="Obrázek 1" class="image">
+                </div>
+
+                <!-- Kontejner s dynamickým textem -->
+                <div class="text-container">
+                    <div class="additional-text">
+                        <h2>Prečo je prierez kábla taký dôležitý?</h2>
+                        Elektrický kábel môžeme porovnať s vodovodnou rúrkou. Čím má trubka väčší priemer, tým viac vody
+                        cez ňu môže pretiecť. Pri elektrickom kábli to funguje úplne rovnako. Čím má väčší priemer, a
+                        teda aj prierez vodiča, tým vyššia je jeho maximálna prúdová zaťažiteľnosť. So zväčšujúcim sa
+                        prierezom sa totiž elektrický odpor (R) vodiča znižuje a z neho vyplývajúci úbytok napätia.
+                    </div>
+
+                </div>
+
+                <!-- Kontejner s statickým textem -->
+                <div class="static-text-container">
+                    <div class="zaklady">
+                        <h2>Čo znamená prierez kábla alebo prierez vodiča?</h2>
+                        <div>
+                            V bežnom hovore nám výrazy „kábel“ a „vodič“ často splývajú a používame ich ako synonymá. To
+                            sa
+                            potom väčšinou odráža aj na pojmoch ako „prierez kábla“ alebo „prierez vodiča“. Keď sa ale
+                            pozrieme podrobnejšie, určité rozdiely tu nájdeme. Prierez kábla predstavuje celú reznú
+                            plochu
+                            kompletného kábla vrátane izolácie a opláštenia (1). Takto určený priemer je dôležitý,
+                            pokiaľ
+                            potrebujeme pre kábel vyvŕtať otvor s potrebným priemerom.
+                        </div>
+                        <div>
+                            Naproti tomu prierez vodiča označuje prierez elektrického vodiča, resp. jednotlivých žíl
+                            (2).
+                            Nehrá pritom rolu, či sú žily tvorené jediným masívnym medeným drôtikom (pozri úvodný
+                            obrázok)
+                            alebo v prípade ohybného lanka, množstvom tenučkých jednotlivých drôtikov, ktoré spoločne
+                            vytvárajú žilu.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+            <div class="container-">
+                Prierez elektrického kábla môžeme ľahko skontrolovať tým, že zmeriame priemer žíl vedúcich prúd v stave bez
+                napätia pomocou posuvného merítka.
+                Pomocou vzorca na výpočet plochy kruhu (A = r2 · π) môžeme následne vypočítať priemer reznej plochy.
+                Na porovnanie sme do nasledujúcej tabuľky zahrnuli normované prierezy káblov, resp. prierezy žíl často
+                používaných vedení a káblov, rovnako ako príslušné priemery žíl:
+            </div>
     </section>
+
+
+
+    <section>
+        <div>
+            <div class="section">
+                Zapojenie poistiek
+            </div>
+    </section>
+
 </body>
 
 </html>
