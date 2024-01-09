@@ -1,3 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+}
+
+
+/* Odstranění zvýrazňování pozadí navigačních prvků */
+.navbar-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+/* Úpravy pro logo */
+.logo {
+    width: 50px;
+    /* Zmenšení šířky logo */
+}
+
+/* Nově přidaný prvek pro obsah nad navigačním panelem */
+.header-content {
+    height: 100vh;
+    /* Výška obsahu nad navigačním panelem */
+}
 
 .banner {
     position: relative;
@@ -15,18 +46,6 @@ video {
     z-index: -1;
 }
 
-/* Header Styles */
-.navbar {
-    padding: 15px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    top: 0;
-}
-
 .logo {
     width: 100px;
     height: auto;
@@ -40,13 +59,6 @@ video {
 
 .navbar-links li {
     margin: 0 10px;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
 }
 
 /* Responzivní štýly */
@@ -77,31 +89,31 @@ video {
         margin-bottom: 10px;
     }
 
-    .content,
-    .additional-content {
-        padding: 20px;
-    }
-
     /* Nově přidané responzivní styly pro odstranění černé plochy pod videem */
     video {
         height: auto;
-        max-height: none; /* Odebrání omezení maximální výšky */
+        max-height: none;
+        /* Odebrání omezení maximální výšky */
     }
 }
 
 /* Úpravy pro skrytí a zobrazení obsahu po skrolování */
 .scroll-content {
-    display: none; /* Obsah bude na začátku skrytý */
+    display: none;
+    /* Obsah bude na začátku skrytý */
     opacity: 0;
-    transition: opacity 1s ease; /* Plynulý přechod pro zobrazení obsahu */
+    transition: opacity 1s ease;
+    /* Plynulý přechod pro zobrazení obsahu */
     max-height: 0;
     overflow: hidden;
 }
 
 .container:hover .scroll-content {
-    display: block; /* Po najetí myší se zobrazí */
+    display: block;
+    /* Po najetí myší se zobrazí */
     opacity: 1;
-    max-height: 100%; /* Nastavíme maximální výšku na původní hodnotu */
+    max-height: 100%;
+    /* Nastavíme maximální výšku na původní hodnotu */
 }
 
 /* Zbytek vašeho původního kódu */
@@ -119,26 +131,9 @@ section {
     margin: 2rem 0rem 5rem 0rem;
     padding: 0.5rem;
     font-size: large;
-} 
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
-    backdrop-filter: blur(10px);
 
 }
 
-section{
-    background-color:rgba(79, 79, 79, 0.897);
-    margin: 2rem 0rem 5rem 0rem;
-    padding: 0.5rem;
-    font-size: large;
-
-}
 .banner {
     width: 100%;
     height: 100vh;
@@ -146,6 +141,20 @@ section{
     block-size: center;
     position: relative;
     overflow: hidden;
+}
+
+
+
+video {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    /* Změna na fixed */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 .navbar {
@@ -163,34 +172,16 @@ section{
     width: 230px;
     height: auto;
     cursor: pointer;
-    padding: 10px 0px 0px 20px;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    padding: 0.5rem;
 }
 
 .navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
     font-weight: 600;
     padding: 15px;
     display: flex;
     align-items: center
-}
-
-li a:hover {
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s;
-    border-radius: 10px;
-}
-
-.navbar a:hover {
-    color: black;
 }
 
 .content {
@@ -199,11 +190,11 @@ li a:hover {
     color: rgb(255, 255, 255);
     top: 70%;
     transform: translateY(-50%);
-
     text-align: center;
+
 }
 
-.content h1{
+.content h1 {
     margin-top: 10rem;
     font-size: 5vw;
     font-weight: 800;
@@ -274,20 +265,21 @@ section {
 
 .container- {
     box-sizing: border-box;
-    background-color:rgb(79, 79, 79);
+    background-color: rgb(79, 79, 79);
     padding: 2rem;
     margin-bottom: 0%;
 }
 
 .flex-container- {
-    
+
     display: flex;
-    background-color: rgb(79, 79, 79); 
+    background-color: rgb(79, 79, 79);
     display: flex;
     align-items: stretch;
     margin-bottom: 2rem;
     padding: 0.5rem;
-    flex-wrap:nowrap; /*toto je na auto responsive*/
+    flex-wrap: nowrap;
+    /*toto je na auto responsive*/
 }
 
 section {
@@ -295,23 +287,25 @@ section {
 
 }
 
-.zaklady{
+.zaklady {
     padding: 0.1rem;
 }
 
-.obrazky{
+.obrazky {
     padding: 1rem;
 }
+
 .top {
     z-index: 1;
     display: flex;
-    background-color: rgb(0, 127, 150); 
+    background-color: rgb(0, 127, 150);
     align-items: stretch;
     margin-bottom: 2rem;
     padding: 0.5rem;
     text-align: center;
     /*flex-wrap: wrap; toto je na auto responsive*/
 }
+
 /*
 .sidebar{
     position: fixed;
@@ -332,54 +326,75 @@ section {
 .container {
     margin-top: 0%;
     display: flex;
-    justify-content: space-between; /* Rozložení prvků ve flex containeru na oba konce */
+    justify-content: space-between;
+    /* Rozložení prvků ve flex containeru na oba konce */
     width: 100%;
     margin: 2rem 0rem;
-    position: relative; /* Relativní pozice pro nastavení absolutních prvků uvnitř */
+    position: relative;
+    /* Relativní pozice pro nastavení absolutních prvků uvnitř */
 }
 
 /* Štýly pro kontejner s obrázkem */
 .image-container {
     position: relative;
-    width: 30%; /* Zde jsem změnil šířku na 30% */
+    width: 30%;
+    /* Zde jsem změnil šířku na 30% */
     height: auto;
     overflow: hidden;
-    transition: width 0.5s ease-in-out; /* Plynulý přechod pro změnu šířky */
+    transition: width 0.5s ease-in-out;
+    /* Plynulý přechod pro změnu šířky */
     background-color: rgb(79, 79, 79);
     padding: 1rem;
 }
 
 .image {
-    width: 100%; /* Obrázek zabere 100% šířky svého kontejneru */
+    width: 100%;
+    /* Obrázek zabere 100% šířky svého kontejneru */
     height: 100%;
 }
 
 /* Štýly pro oba textové kontejnery */
 .text-container,
 .static-text-container {
-    position: absolute; /* Absolutní pozice umožňuje volné umístění vzhledem k rodičovskému kontejneru */
-    top: 0; /* Zarovnání horního okraje s rodičovským kontejnerem */
-    left: 0; /* Nastavení levého okraje na 0 pro flexibilní nastavení šířky */
-    right: 0; /* Nastavení pravého okraje na 0 pro flexibilní nastavení šířky */
-    height: 100%; /* Výška odpovídá výšce obrázkového kontejneru */
+    position: absolute;
+    /* Absolutní pozice umožňuje volné umístění vzhledem k rodičovskému kontejneru */
+    top: 0;
+    /* Zarovnání horního okraje s rodičovským kontejnerem */
+    left: 0;
+    /* Nastavení levého okraje na 0 pro flexibilní nastavení šířky */
+    right: 0;
+    /* Nastavení pravého okraje na 0 pro flexibilní nastavení šířky */
+    height: 100%;
+    /* Výška odpovídá výšce obrázkového kontejneru */
     overflow: hidden;
-    opacity: 0; /* Na začátku neviditelné */
-    transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out, height 0.5s ease-in-out; /* Plynulý přechod pro různé vlastnosti */
-    background-color: rgb(79, 79, 79); /* Černé pozadí s průhledností */
-    color: rgb(185, 185, 185); /* Bílý text */
-    text-align: center; /* Zarovnání textu na střed */
-    z-index: 1; /* Nižší z-index, aby byl nad statickým textem */
+    opacity: 0;
+    /* Na začátku neviditelné */
+    transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out, height 0.5s ease-in-out;
+    /* Plynulý přechod pro různé vlastnosti */
+    background-color: rgb(79, 79, 79);
+    /* Černé pozadí s průhledností */
+    color: rgb(185, 185, 185);
+    /* Bílý text */
+    text-align: center;
+    /* Zarovnání textu na střed */
+    z-index: 1;
+    /* Nižší z-index, aby byl nad statickým textem */
 }
 
 .container:hover .text-container {
     opacity: 1;
     height: 100%;
-    position: absolute; /* Absolutní pozice umožňuje volné umístění vzhledem k rodičovskému kontejneru */
-    top: 0; /* Zarovnání horního okraje s rodičovským kontejnerem */
-    left: 0; /* Nastavení levého okraje na 0 pro flexibilní nastavení šířky */
-    right: 0; /* Nastavení pravého okraje na 0 pro flexibilní nastavení šířky */
+    position: absolute;
+    /* Absolutní pozice umožňuje volné umístění vzhledem k rodičovskému kontejneru */
+    top: 0;
+    /* Zarovnání horního okraje s rodičovským kontejnerem */
+    left: 0;
+    /* Nastavení levého okraje na 0 pro flexibilní nastavení šířky */
+    right: 0;
+    /* Nastavení pravého okraje na 0 pro flexibilní nastavení šířky */
     width: 48%;
-    height: 100%; /* Výška odpovídá výšce obrázkového kontejneru */
+    height: 100%;
+    /* Výška odpovídá výšce obrázkového kontejneru */
 }
 
 .container:not(:hover) .text-container {
@@ -389,39 +404,100 @@ section {
 
 /* Štýly pro statický text */
 .static-text-container {
-    z-index: 0; /* Nižší z-index, aby byl pod dynamickým textem */
+    z-index: 0;
+    /* Nižší z-index, aby byl pod dynamickým textem */
     width: 68%;
-    right: 0; /* Nastavení pravého okraje na 0 pro připnutí k pravé straně */
-    left: auto; /* Resetování levého okraje */
+    right: 0;
+    /* Nastavení pravého okraje na 0 pro připnutí k pravé straně */
+    left: auto;
+    /* Resetování levého okraje */
 }
 
 .container:hover .image-container {
-    width: 50%; /* Při najetí myší na obrázek se zvětší šířka obrázkového kontejneru */
+    width: 50%;
+    /* Při najetí myší na obrázek se zvětší šířka obrázkového kontejneru */
 }
 
 .container:hover .text-container {
-    opacity: 1; /* Při najetí myší se zobrazí textový kontejner */
-    left: 52%; /* Při najetí myší se posune doleva o 38% */
+    opacity: 1;
+    /* Při najetí myší se zobrazí textový kontejner */
+    left: 52%;
+    /* Při najetí myší se posune doleva o 38% */
 }
 
 .container:not(:hover) .text-container {
-    opacity: 0; /* Pokud myš není nad obrázkem, textový kontejner je neviditelný */
-    left: 0; /* Vrátí se na původní pozici */
+    opacity: 0;
+    /* Pokud myš není nad obrázkem, textový kontejner je neviditelný */
+    left: 0;
+    /* Vrátí se na původní pozici */
 }
 
 .container:not(:hover) .static-text-container {
-    opacity: 1; /* Pokud myš není nad obrázkem, statický text je viditelný */
+    opacity: 1;
+    /* Pokud myš není nad obrázkem, statický text je viditelný */
 }
-.section{
+
+.section {
     font-size: 5vw;
     font-family: 'Courier New', Courier, monospace;
     padding: 2rem;
 }
 
-h2{
+h2 {
     margin: 0.3rem;
 }
 
-.additional-text{
+.additional-text {
     padding: 1rem;
+}
+
+/* Zde bude váš stávající CSS kód */
+
+/* Úpravy pro zmenšení navigačního panelu */
+.navbar {
+    padding: 10px;
+    /* Updatovaný padding pro zachování vzhledu */
+    height: 50px;
+    /* Zmenšení výšky navigačního panelu na 50 pixelů */
+}
+
+/* Odstranění zvýrazňování pozadí navigačních prvků */
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Podčáry pro navigační položky */
+.navbar-links li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    /* Barva podčáry */
+    transition: transform 0.3s;
+    /* Plynulý přechod transformace (šířky) */
+    transform-origin: 0% 50%;
+    /* Nastavení bodu, kolem kterého se bude transformovat */
+    transform: scaleX(0);
+    /* Začáteční šířka je nula (nezobrazeno) */
+}
+
+/* Přidání šířky podčáry po přejetí myší */
+.navbar-links li:hover::after {
+    transform: scaleX(1);
+    /* Zobrazení celé šířky */
 }
