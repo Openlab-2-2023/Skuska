@@ -20,7 +20,9 @@ body {
     width: 50px;
 }
 
+
 .header-content {
+
     height: 100vh;
 }
 
@@ -45,6 +47,7 @@ video {
     height: auto;
     cursor: pointer;
 }
+
 
 .navbar-links {
     list-style: none;
@@ -103,7 +106,7 @@ video {
 }
 
 section {
-    border-radius: 2%;
+    border-radius: 17px;
     background-color: rgba(0, 28, 85, 0.897);
     margin: 2rem 0rem 5rem 0rem;
     padding: 0.5rem;
@@ -133,16 +136,17 @@ video {
     transform: translateX(-50%);
     z-index: -1;
 }
-
 .navbar {
-    padding: 0;
+    height: 50px;
+    padding: 10px;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+
     width: 100%;
-    top: 0;
+    background-color: rgba(82, 82, 82, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Pridajte tieň */
 }
 
 .logo {
@@ -379,10 +383,6 @@ h2 {
     padding: 1.9rem;
 }
 
-.navbar {
-    padding: 10px;
-    height: 50px;
-}
 
 .navbar-links {
     list-style: none;
@@ -525,4 +525,111 @@ tr:nth-child(even) {
     margin-bottom: 5rem;
     font-size: 60px;
     font: optional;
+}
+
+
+.gallery {
+    justify-content: space-around   ;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Negative margin to compensate for padding */
+}
+
+.OBRAZKY {
+    border-radius: 17px;
+    box-shadow: 0 0 10px rgb(8, 69, 134);
+    width: calc(33.33% - 90px); /* 33.33% width for each image with some spacing */
+    margin: 1rem; /* Spacing between images */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(139, 69, 19, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out;
+    transform: translateX(100%); /* Initial position, hidden */
+    border-radius: 2%; /* Added border-radius to the text */
+}
+
+.OBRAZKY:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.OBRAZKY:hover .text {
+    transform: translateX(0);
+    opacity: 1;
+}@media (max-width: 768px) {
+    .OBRAZKY {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Zvyšok kódu predchádzajúceho ostáva nezmenený */
+
+@media (max-width: 768px) {
+    .OBRAZKY {
+        width: calc(100% - 20px);
+    }
+    .text {
+        width: 100%; /* Full width for text on mobile */
+    }
+    
+    /* Upraviť ďalšie prvky na mobilný layout */
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color: rgba(79, 79, 79, 0.897);
+        z-index: 1;
+    }
+
+    .navbar.show .navbar-links {
+        display: flex;
+    }
+
+    .navbar.show .navbar-links li {
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    video {
+        height: auto;
+        max-height: none;
+    }
+
+    .content {
+        top: 50%; /* Adjust as needed */
+    }
+
+    /* Upravte ďalšie prvky podľa potreby pre mobilný layout */
 }
