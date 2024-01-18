@@ -39,8 +39,6 @@
     </header>
     <section>
 
-
-
         <div>
             <div class="section">
                 Prierez(priemer)vodiča
@@ -209,6 +207,36 @@
                 <!-- Kontejner s obrázkem -->
                 <div class="image-container">
                     <img src="../galery/istič.svg" alt="Obrázek 1" class="image">
+                    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Kruh (bodka) -->
+                        <circle cx="50" cy="50" r="27" fill="red" id="myCircle" />
+                
+                        <!-- Skrytý text -->
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="12" id="displayText">
+                            VODIČE
+
+                        </text>
+                    </svg>
+                
+                    <!-- JavaScript pre interaktivitu -->
+                    <script>
+                        // Získanie elementov
+                        var circle = document.getElementById('myCircle');
+                        var text = document.getElementById('displayText');
+                
+                        // Pridanie event listenera pre vstup myši
+                        circle.addEventListener('mouseenter', function () {
+                            // Zobrazenie textu
+                            text.style.display = 'block';
+                        });
+                
+                        // Pridanie event listenera pre výstup myši
+                        circle.addEventListener('mouseleave', function () {
+                            // Skrytie textu
+                            text.style.display = 'none';
+                        });
+                    </script>
+        
                 </div>
 
                 <!-- Kontejner s dynamickým textem -->

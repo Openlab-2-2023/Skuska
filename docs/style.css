@@ -628,8 +628,14 @@ img {
     }
 
     .content {
-        top: 50%; /* Adjust as needed */
+        top: 50%;
     }
 
-    /* Upravte ďalšie prvky podľa potreby pre mobilný layout */
+}
+
+svg{
+    z-index: 100;
+    position:absolute; 
+    top: 40px;
+    left: -10px
 }
