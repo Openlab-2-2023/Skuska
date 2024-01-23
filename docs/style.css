@@ -492,6 +492,7 @@ img {
 }
 
 @media (max-width: 768px) {
+
     .OBRAZKY {
         width: calc(100% - 20px);
     }
