@@ -391,7 +391,7 @@ tr:nth-child(even) {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .form-label {
@@ -551,12 +551,12 @@ h3{
 }
 
 footer{
+    margin-bottom: 0%;
     margin-top: 10rem;
     background-color: rgba(45, 45, 45, 0.642);
     color: #7a7a7a;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px 0;
-    padding-top: 25px;
+    padding-top: 35px;
     display: flex;
     justify-content: center;
 }
