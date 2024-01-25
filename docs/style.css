@@ -445,6 +445,7 @@ tr:nth-child(even) {
 }
 
 .OBRAZKY {
+    padding: 0.2rem;
     border-radius: 17px;
     box-shadow: 0 0 10px rgb(8, 69, 134);
     width: calc(33.33% - 90px); /* 33.33% width for each image with some spacing */
@@ -452,7 +453,7 @@ tr:nth-child(even) {
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease-in-out;
-    font-size: 1vw;
+    font-size: 11px;
 }
 
 img {
