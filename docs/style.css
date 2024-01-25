@@ -452,6 +452,7 @@ tr:nth-child(even) {
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease-in-out;
+    font-size: 1vw;
 }
 
 img {
@@ -493,6 +494,8 @@ img {
 @media (max-width: 768px) {
 
     .OBRAZKY {
+        padding: 0.2rem;
+        font-size: 7px;
         width: calc(100% - 20px);
     }
     .text {
